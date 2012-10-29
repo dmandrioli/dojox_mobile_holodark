@@ -19,7 +19,6 @@
   border-bottom-color: #33b5e5;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  text-align: left;
   font-size: 18px;
   font-weight: normal;
 }
@@ -38,7 +37,4 @@
 }
 .mblHeadingCenterTitle .mblHeadingSpanTitle {
   display: none;
-}
-.mblHeadingDivTitle {
-  left: 10px;
 }
