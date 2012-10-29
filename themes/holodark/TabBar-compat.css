@@ -23,12 +23,12 @@
   background-image: url(compat/tab-seg-sel-button-bg.png);
 }
 .dj_ff3 .mblTabBarSegmentedControl .mblTabBarButton:first-child {
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-bottomleft: 0px;
 }
 .dj_ff3 .mblTabBarSegmentedControl .mblTabBarButton:last-child {
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
 }
 .dj_ff3 .mblTabBarStandardTab .mblTabBarButton {
   -moz-border-radius-topleft: 4px;

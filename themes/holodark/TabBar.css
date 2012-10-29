@@ -82,6 +82,7 @@
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   border-style: none;
+  line-height: 0.5em;
 }
 .mblTabBarSegmentedControl.mblTabBarNoText .mblTabBarButton {
   width: auto;
@@ -100,19 +101,20 @@
   font-weight: bold;
   text-align: center;
   line-height: 29px;
-  border-style: solid;
-  border-color: #555555;
-  color: black;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#a6a6a6));
+  border-radius: 0px;
+  height: 28px;
+  border-bottom-color: #33b5e5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 .mblTabBarSegmentedControl .mblTabBarButton:first-child {
   border-left-width: 1px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 .mblTabBarSegmentedControl .mblTabBarButton:last-child {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .mblTabBarSegmentedControl .mblTabBarButtonIconArea {
   position: absolute;
@@ -120,8 +122,11 @@
   left: 0px;
 }
 .mblTabBarSegmentedControl .mblTabBarButtonSelected {
-  color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#313031), to(#959595), color-stop(0.5, #5a555a), color-stop(0.5, #616161));
+  border-radius: 0px;
+  height: 23px;
+  border-bottom-color: #33b5e5;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
 }
 .mblHeading .mblTabBarSegmentedControl {
   display: inline;
@@ -155,6 +160,12 @@
   position: absolute;
   top: 3px;
   left: 0px;
+}
+.mblTabBarStandardTab .mblTabBarButtonLabel {
+  display: inline;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
 }
 .mblTabBarStandardTab .mblTabBarButtonSelected {
   color: white;
@@ -247,6 +258,14 @@
   font-size: 13px;
   color: white;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  border-radius: 0px;
+  height: 58px;
+  border-style: none;
+  border-bottom-color: #33b5e5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 .mblTabBarTallTab .mblTabBarButtonIconArea {
   margin-top: 8px;
@@ -257,6 +276,14 @@
 }
 .mblTabBarTallTab .mblTabBarButtonSelected {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a59ea5), to(#848284));
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  border-radius: 0px;
+  height: 53px;
+  border-style: none;
+  border-bottom-color: #33b5e5;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
 }
 @media (max-width:500px) {
   .mblTabBarTabBar {

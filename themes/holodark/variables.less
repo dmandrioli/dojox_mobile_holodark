@@ -386,22 +386,27 @@
 }
 
 // barType="segmentedControl"
-@mbl-tab-bar-segmented-control-border-radius: 5px;
+@mbl-tab-bar-segmented-control-border-radius: 0px;
 //
 .mblTabBarSegmentedControl-styles () {
 	.holoTabBarBackground-styles;
+  line-height: 0.5em;	
 }
 .mblTabBarSegmentedControlButton-styles () {
-	border-style: solid;
-	border-color: #555555;
-	color: @default-button-color;
-	background-image: @default-button-background-image;
+  border-radius: 0px;
+  height:28px;
+  border-bottom-color: @holo-color1;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 .mblTabBarSegmentedControlButton-compat-gecko () {
 }
 .mblTabBarSegmentedControlButtonSelected-styles () {
-	color: @default-button-selected-color;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#313031), to(#959595), color-stop(0.5, #5a555a), color-stop(0.5, #616161));
+  border-radius: 0px;
+  height:23px;
+  border-bottom-color: @holo-color1;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
 }
 
 // barType="standardTab"
@@ -416,6 +421,10 @@
 .mblTabBarStandardTabButtonIconArea-styles () {
 }
 .mblTabBarStandardTabButtonLabel-styles () {
+  display: inline;
+  text-transform: uppercase;
+  color: @holo-color;
+  font-weight: bold;  
 }
 .mblTabBarStandardTabButtonSelected-styles () {
 	color: @default-button-selected-color;
@@ -430,6 +439,14 @@
 	.holoTabBarBackground-styles;
 }
 .mblTabBarTallTabButton-styles () {
+  background-color: rgba(0,0,0,0);
+  background-image: none;
+  border-radius: 0px;
+  height: 58px;
+  border-style: none;
+  border-bottom-color: @holo-color1;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;  
 }
 .mblTabBarTallTabButton-FirstChild-styles () {
 }
@@ -440,6 +457,14 @@
 .mblTabBarTallTabButtonLabel-styles () {
 }
 .mblTabBarTallTabButtonSelected-styles () {
+  background-color: rgba(0,0,0,0);
+  background-image: none;
+  border-radius: 0px;
+  height:53px;
+  border-style: none;
+  border-bottom-color: @holo-color1;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;  
 }
 .mblTabBarTallTabButtonLabelSelected-styles () {
 }
