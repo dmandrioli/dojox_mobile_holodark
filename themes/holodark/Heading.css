@@ -1,0 +1,44 @@
+/* View background */
+/* dojox.mobile.Heading */
+.mblHeading {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  z-index: 1;
+  padding: 0;
+  height: 42px;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 44px;
+  background-color: black;
+  border-bottom-color: #33b5e5;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  text-align: left;
+  font-size: 18px;
+  font-weight: normal;
+}
+.mblHeading * {
+  z-index: 2;
+}
+.mblHeadingDivTitle {
+  position: absolute;
+  width: 100%;
+  display: none;
+  left: 0;
+  z-index: 1;
+}
+.mblHeadingCenterTitle .mblHeadingDivTitle {
+  display: block;
+}
+.mblHeadingCenterTitle .mblHeadingSpanTitle {
+  display: none;
+}
+.mblHeadingDivTitle {
+  left: 10px;
+}

@@ -1,0 +1,9 @@
+/* View background */
+/* dojox.mobile.EdgeToEdgeList */
+.mblEdgeToEdgeList {
+  margin: 0;
+  padding: 0;
+}
+.mblEdgeToEdgeList .mblListItem:last-child {
+  border-bottom-color: #313431;
+}
