@@ -15,13 +15,13 @@
 @holo-color5d: #CC0000;
 
 /* View background */
-@holo-view-gradient-color: #272C33;
-@holo-view-background-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-gradient-color));
-@holo-view-background-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-gradient-color 100%);
+@holo-view-bottom-gradient-color: #272C33;
+@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
+@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
 
-.holoViewBackground-styles () {
+.holoViewBottomGradient-styles () {
 	background-color: @holo-base-color;
-	background-image: @holo-view-background-image;
+	background-image: @holo-view-bottom-gradient-image;
 	
 }
 
@@ -104,11 +104,10 @@
 
 // common.less
 .mobile-body-styles () {
-	.holoViewBackground-styles;
+	background-color: @holo-base-color;
 	font-family: Helvetica;
 	font-size: 17px;
 	color: @holo-color;
-	
 }
 
 .mblView-styles () {
