@@ -10,14 +10,22 @@
   line-height: 29px;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  border-color: #9cacc0;
-  border-radius: 3px;
-  color: black;
-  font-size: 13px;
+  background-image: none;
+  background-color: #333333;
+  border-style: none;
+  border-top-style: solid;
+  border-top-color: rgba(85, 85, 85, 0.9);
+  border-radius: 2px;
+  height: 40px;
+  color: white;
 }
 .mblButtonSelected {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
   color: white;
+  border-style: none;
+  background-image: none;
+  background-color: #2C94BB;
+  box-shadow: 0px 0px 1px 4px #1F5366;
 }
 .mblButtonDisabled, .mblButton:disabled {
   border-color: grey;
@@ -28,6 +36,13 @@
 .mblBlueButton {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#7a9de9), to(#2362dd), color-stop(0.5, #366edf), color-stop(0.5, #215fdc));
   color: white;
+  background-image: none;
+  background-color: #333333;
+  border-style: none;
+  border-top-style: solid;
+  border-top-color: rgba(85, 85, 85, 0.9);
+  border-radius: 2px;
+  background-color: #0099CC;
 }
 .mblBlueButtonSelected {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
@@ -35,7 +50,34 @@
 .mblRedButton {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fa9d58), to(#ee4115), color-stop(0.5, #ff4d25), color-stop(0.5, #ed4d15));
   color: white;
+  background-image: none;
+  background-color: #333333;
+  border-style: none;
+  border-top-style: solid;
+  border-top-color: rgba(85, 85, 85, 0.9);
+  border-radius: 2px;
+  background-color: #CC0000;
 }
 .mblRedButtonSelected {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+}
+.mblButtonDisabled, .mblButton:disabled {
+  color: #646464;
+  background-image: none;
+  background-color: #333333;
+  border-style: none;
+  border-top-style: solid;
+  border-top-color: rgba(85, 85, 85, 0.9);
+  border-radius: 2px;
+  background-color: #212121;
+}
+.mblBlueButtonSelected {
+  border-style: none;
+  background-image: none;
+  box-shadow: 0px 0px 1px 4px #33B5E5;
+}
+.mblRedButtonSelected {
+  border-style: none;
+  background-image: none;
+  box-shadow: 0px 0px 1px 4px #FF4444;
 }

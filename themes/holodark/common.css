@@ -23,7 +23,7 @@ html.mobile, .mobile body {
 }
 /* Default Button Colors */
 .mblColorDefault {
-  color: black;
+  color: white;
   background-color: #c6c6c6;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#a6a6a6));
 }

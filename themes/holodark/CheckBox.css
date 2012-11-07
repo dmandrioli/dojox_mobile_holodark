@@ -13,8 +13,12 @@
   -webkit-appearance: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-transform: translatey(0.45em);
-  border-color: #9cacc0;
-  border-radius: 3px;
+  background-image: none;
+  background-color: #333333;
+  border-style: none;
+  border-top-style: solid;
+  border-top-color: rgba(85, 85, 85, 0.9);
+  border-radius: 2px;
 }
 .mblCheckBoxSelected {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));

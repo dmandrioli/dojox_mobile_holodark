@@ -31,4 +31,5 @@
   bottom: 0;
   background-color: black;
   background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#272c33));
+  z-index: -1000;
 }
