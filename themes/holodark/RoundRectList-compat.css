@@ -1,22 +1,22 @@
 /* View background */
 /* dojox.mobile.RoundRectList */
 .dj_ff3 .mblRoundRectList {
-  -moz-border-radius: 8px;
+  -moz-border-radius: 4px;
 }
 .dj_ff3 .mblRoundRectList .mblListItem:first-child {
-  -moz-border-radius-topleft: 8px;
-  -moz-border-radius-topright: 8px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
 }
 .dj_ff3 .mblRoundRectList .mblListItem:last-child {
-  -moz-border-radius-bottomleft: 8px;
-  -moz-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-bottomright: 4px;
 }
 /* Round Corner */
 .dj_ie .mblRoundRectList {
   position: relative;
 }
 .dj_ie .mblRoundCorner {
-  background-color: black;
+  background-color: transparent;
   height: 1px;
   font-size: 1px;
   overflow: hidden;
@@ -26,7 +26,7 @@
 }
 .dj_ie .mblRoundRectContainer {
   padding: 3px 8px;
-  background-color: black;
+  background-color: transparent;
   border-style: solid;
   border-color: #adaaad;
   border-width: 0 1px;

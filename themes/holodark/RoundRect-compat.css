@@ -1,17 +1,17 @@
 /* View background */
 /* dojox.mobile.RoundRect */
 .mblRoundRect.mblShadow {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: none;
 }
 .dj_ff3 .mblRoundRect {
-  -moz-border-radius: 8px;
+  -moz-border-radius: 4px;
 }
 .dj_ff3 .mblRoundRect.mblShadow {
-  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: none;
 }
 /* Round Corner */
 .dj_ie .mblRoundCorner {
-  background-color: black;
+  background-color: transparent;
   height: 1px;
   font-size: 1px;
   overflow: hidden;
@@ -21,7 +21,7 @@
 }
 .dj_ie .mblRoundRectContainer {
   padding: 3px 8px;
-  background-color: black;
+  background-color: transparent;
   border-style: solid;
   border-color: #adaaad;
   border-width: 0 1px;
