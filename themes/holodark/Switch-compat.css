@@ -33,7 +33,7 @@
 }
 /* Square Shape */
 .mblSwSquareShape .mblSwitchBg {
-  -moz-border-radius: 2px;
+  -moz-border-radius: 0px;
 }
 .mblSwSquareShape .mblSwitchBgLeft {
   background-image: url(compat/switch-square-l.gif);
@@ -42,7 +42,7 @@
   background-image: url(compat/switch-square-r.gif);
 }
 .mblSwSquareShape .mblSwitchKnob {
-  -moz-border-radius: 2px;
+  -moz-border-radius: 0px;
   background-image: url(compat/switch-square-k.gif);
 }
 /* Round Shape1 */
@@ -103,7 +103,7 @@
 }
 /* Default Shape */
 .mblSwDefaultShape .mblSwitchBg {
-  -moz-border-radius: 2px;
+  -moz-border-radius: 0px;
 }
 .mblSwDefaultShape .mblSwitchBgLeft {
   background-image: url(compat/switch-square-l.gif);
@@ -112,6 +112,6 @@
   background-image: url(compat/switch-square-r.gif);
 }
 .mblSwDefaultShape .mblSwitchKnob {
-  -moz-border-radius: 2px;
+  -moz-border-radius: 0px;
   background-image: url(compat/switch-square-k.gif);
 }
