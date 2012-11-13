@@ -4,7 +4,7 @@
   margin: 15px;
   border-style: inset;
   border-width: 1px;
-  border-radius: 2px;
+  border-radius: 10em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bdbebd), to(#f7f3f7));
   -webkit-user-select: none;
   -webkit-box-sizing: content-box;
@@ -31,7 +31,7 @@
   left: 50%;
 }
 .mblSliderProgressBar {
-  border-radius: 2px;
+  border-radius: 10em;
   background-image: none;
 }
 .mblSliderHandle {
@@ -40,9 +40,9 @@
   height: 18px;
   border-style: outset;
   border-width: 1px;
-  border-radius: 2px;
+  border-radius: 10em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9c9a9c), to(#848284));
-  border-color: #9d9d9d;
+  border-color: transparent;
 }
 .mblSliderTransition {
   -webkit-transition-duration: 400ms;
@@ -57,4 +57,37 @@
   height: 100%;
   background-color: transparent;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.mblSlider {
+  border-style: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: transparent;
+  border-color: #b0b0b0;
+}
+.mblSliderH {
+  width: 200px;
+  height: 3px;
+  background-color: #292929;
+  border-style: none;
+}
+.mblSliderV {
+  height: 200px;
+  width: 3px;
+  background-color: #292929;
+  border-style: none;
+}
+.mblSliderProgressBar {
+  border: radius: 0;
+  background-image: none;
+  background-color: #33b5e5;
+}
+.mblSliderHandle {
+  background-image: -webkit-gradient(radial, 9 9, 3, 9 9, 9, from(#33b5e5), color-stop(0, #33b5e5), color-stop(0.01, rgba(31, 83, 102, 0.8)), to(rgba(31, 83, 102, 0.8)));
+  border-color: transparent;
+}
+.mblSliderHandle:after {
+  border-style: solid;
+  background-image: none;
+  border-color: transparent;
 }

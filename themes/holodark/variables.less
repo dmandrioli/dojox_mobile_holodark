@@ -372,14 +372,20 @@
 }
 
 // Slider.less
-@mbl-slider-bar-border-radius: 2px;
-@mbl-slider-knob-border-radius: 2px;
+@mbl-slider-bar-border-radius: 10em;
+@mbl-slider-knob-border-radius: 10em;
+
+@holo-slider-thumb-color: rgba(31, 83, 102, 0.8);
+@holo-slider-background-image: -webkit-gradient(radial, 9 9, 3, 9 9, 9, from(@holo-color1), color-stop(0, @holo-color1), color-stop(0.01, @holo-slider-thumb-color), to(@holo-slider-thumb-color));
+@holo-slider-background-image-gecko: -moz-linear-gradient(top, #bdbebd 0%, #f7f3f7 100%);// TBD
+@holo-slider-track-color: #292929;
+
 //
 .mblSlider-styles () {
 	border-color: #b0b0b0;
 }
 .mblSliderHandle-styles () {
-	border-color: #9d9d9d;
+	border-color: transparent;
 }
 
 // TabBar.less
