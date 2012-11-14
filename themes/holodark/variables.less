@@ -3,6 +3,7 @@
 @holo-grey1: #222222;
 @holo-grey2: #333333;
 @holo-grey3: #919191;
+@holo-grey4: #4F4F4F;
 
 @holo-color1: #33B5E5;
 @holo-color1d: #0099CC;
@@ -330,15 +331,20 @@
 .dijitPopup-styles () {
 	border-radius: 0;
 }
+
 .mblComboBoxMenu-styles () {
 	border-radius: 0;
-	background-color: white;
-	color: black;
+	background-color: @holo-grey2;
+	color: @holo-color;
 }
+
 .mblComboBoxMenuItem-styles () {
-	border-color: #ffffff;
-	color: inherit;
+	border-color: @holo-grey4;
+	border-top: none;
+	height: 35px;
+	padding-top: 17px;
 }
+
 .mblComboBoxMenuItemSelected-styles () {
 	background-image: @default-selected-background-image;
 	color: white;
@@ -533,6 +539,7 @@
 	border-width: 2px;
 	font-size: 17px;
 	border-style: solid;
+	color: @holo-color;
 }
 
 // ToggleButton.less

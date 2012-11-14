@@ -23,8 +23,8 @@
   overflow: hidden;
   border: 1px solid black;
   border-radius: 0;
-  background-color: white;
-  color: black;
+  background-color: #333333;
+  color: white;
 }
 .mblComboBoxMenuItem {
   padding: .1em .2em;
@@ -32,8 +32,10 @@
   border-style: solid;
   text-align: left;
   white-space: nowrap;
-  border-color: #ffffff;
-  color: inherit;
+  border-color: #4f4f4f;
+  border-top: none;
+  height: 35px;
+  padding-top: 17px;
 }
 .mblComboBoxMenuItemSelected {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
