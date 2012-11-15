@@ -682,7 +682,7 @@
 }
 
 // SimpleDialog.less
-@mbl-simple-dialog-border-radius: 6px;
+@mbl-simple-dialog-border-radius: 2px;
 //
 .mblSimpleDialog-styles () {
 	padding: 5px;
@@ -692,6 +692,14 @@
 	background-color: rgba(64,64,64,0.85);
 	border: 2px solid #eeeeee;
 	color: white;
+
+  background-image: none;
+  background-color: @holo-grey1;
+  border-style: none;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(255,255,255,0.6);
+  border-radius: 2px; 
 }
 .mblSimpleDialogDecoration-compat () {
 	background-color: #404040;
@@ -703,14 +711,14 @@
 	margin: 14px 0 7px -5px;
 	padding: 0 14px 14px;
 	width: 244px;
-	border-bottom: 1px solid rgba(96,96,96,0.85);
-	font-size: 18px;
+	border-bottom: 1px solid @holo-color1;
+	font-size: 17px;
 	text-align: left;
 }
 .mblSimpleDialogText-styles () {
 	margin: 14px 9px;
 	width: 244px;
-	font-size: 18px;
+	font-size: 17px;
 	text-align: left;
 }
 
