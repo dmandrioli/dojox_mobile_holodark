@@ -24,8 +24,8 @@ html.mobile, .mobile body {
 /* Default Button Colors */
 .mblColorDefault {
   color: white;
-  background-color: #c6c6c6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#a6a6a6));
+  background-color: red;
+  background-image: none;
 }
 .mblColorDefault45 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#dfdfdf), to(#a6a6a6));

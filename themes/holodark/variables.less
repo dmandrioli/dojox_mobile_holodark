@@ -58,9 +58,9 @@
 @mbl-color-default-sel-45-gecko: -moz-linear-gradient(top left, #306ea1 0%, #4090d3 6%, #306ea1 50%, #266093 100%);
 
 @default-button-color: @holo-color;
-@default-button-background-color: #c6c6c6;
-@default-button-background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#a6a6a6));
-@default-button-background-image-gecko: -moz-linear-gradient(top, #dfdfdf 0%, #a6a6a6 100%);
+@default-button-background-color: red;
+@default-button-background-image: none;
+@default-button-background-image-gecko: none;
 @default-button-border-radius: 2px;
 
 @default-button-selected-color: white;
@@ -85,6 +85,7 @@
 	border-style: none;
 	border-top-style: solid;
 	border-top-color: rgba(85,85,85,0.9);
+	border-top-width: 1px;
 	border-radius: 2px;
 }
 
@@ -136,7 +137,7 @@
 	background-image: @default-blue-button-background-image;
 }
 .mblColorDefault-styles () {
-	color: @default-button-color;
+	color: @holo-color;
 	background-color: @default-button-background-color;
 	background-image: @default-button-background-image;
 }
@@ -163,6 +164,7 @@
 .mblToolBarButton-styles () {
 	text-shadow: none;
 }
+
 .mblToolBarButtonArrow-styles () {
 	border-radius: 1px;
   -webkit-transform: scale(0.7, 1.05) rotate(45deg);
@@ -185,7 +187,7 @@
   right: -1px;
 }
 .mblToolBarButtonBody-styles () {
-	border: 1px solid #555555;
+	.default-button-border-styles;
 }
 .mblToolBarButtonBodyInHeading-styles () {
 }

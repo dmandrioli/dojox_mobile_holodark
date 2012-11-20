@@ -6,7 +6,7 @@
   background-image: -moz-linear-gradient(top left, #7a9de9 0%, #366edf 50%, #215fdc 50%, #2362dd 100%);
 }
 .dj_gecko .mblColorDefault {
-  background-image: -moz-linear-gradient(top, #dfdfdf 0%, #a6a6a6 100%);
+  background-image: none;
 }
 .dj_gecko .mblColorDefault45 {
   background-image: -moz-linear-gradient(top left, #dfdfdf 0%, #a6a6a6 100%);

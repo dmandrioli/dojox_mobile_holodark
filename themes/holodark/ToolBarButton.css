@@ -51,7 +51,13 @@
   position: relative;
   overflow: hidden;
   border-radius: 0;
-  border: 1px solid #555555;
+  background-image: none;
+  background-color: #333333;
+  border-style: none;
+  border-top-style: solid;
+  border-top-color: rgba(85, 85, 85, 0.9);
+  border-top-width: 1px;
+  border-radius: 2px;
 }
 .mblToolBarButton .mblToolBarButtonBody {
   width: 100%;
