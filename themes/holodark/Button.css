@@ -21,7 +21,7 @@
   color: white;
 }
 .mblButtonSelected {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+  background-image: none;
   color: white;
   border-color: transparent;
   background-image: none;
@@ -47,7 +47,7 @@
   background-color: #0099CC;
 }
 .mblBlueButtonSelected {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+  background-image: none;
 }
 .mblRedButton {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fa9d58), to(#ee4115), color-stop(0.5, #ff4d25), color-stop(0.5, #ed4d15));
@@ -62,7 +62,7 @@
   background-color: #CC0000;
 }
 .mblRedButtonSelected {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+  background-image: none;
 }
 .mblButtonDisabled, .mblButton:disabled {
   color: #646464;

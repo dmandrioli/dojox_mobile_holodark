@@ -26,7 +26,7 @@
 }
 .mblListItemSelected {
   color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+  background-image: none;
 }
 .mblListItemSelected .mblDomButton div {
   border-color: white;
@@ -76,7 +76,7 @@
   line-height: normal;
   margin-right: 4px;
   color: white;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 .mblListItemLabel {
   position: relative;

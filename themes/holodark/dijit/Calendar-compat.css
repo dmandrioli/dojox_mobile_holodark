@@ -26,7 +26,7 @@
   background-image: -moz-linear-gradient(top, #00a200 0%, #00ba00 20%, #00ba00 20%, #00d300 100%);
 }
 .dj_gecko .dijitCalendarActiveDate .dijitCalendarDateLabel {
-  background-image: -moz-linear-gradient(top, #306ea1 0%, #4090d3 6%, #306ea1 50%, #266093 100%);
+  background-image: none;
 }
 .dj_gecko .dijitCalendarYearLabel {
   background-image: -moz-linear-gradient(top, #84868c 0%, #52555a 50%, #292929 50%, #000000 100%);

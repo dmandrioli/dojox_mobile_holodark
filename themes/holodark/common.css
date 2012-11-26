@@ -24,19 +24,19 @@ html.mobile, .mobile body {
 /* Default Button Colors */
 .mblColorDefault {
   color: white;
-  background-color: red;
+  background-color: #333333;
   background-image: none;
 }
 .mblColorDefault45 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#dfdfdf), to(#a6a6a6));
+  background-image: #333333;
 }
 .mblColorDefaultSel {
   color: white;
-  background-color: #3578b1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+  background-color: #33b5e5;
+  background-image: none;
 }
 .mblColorDefaultSel45 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+  background-image: #33b5e5;
 }
 .mblSpriteIcon {
   position: absolute;

@@ -28,7 +28,7 @@
   cursor: default;
 }
 .mblToggleButtonSelected {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+  background-image: none;
   color: white;
 }
 .mblToggleButtonChecked {
@@ -49,6 +49,6 @@
   border-color: white;
 }
 .mblToggleButtonChecked.mblToggleButtonSelected {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+  background-image: none;
   color: white;
 }

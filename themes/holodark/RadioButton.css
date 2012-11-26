@@ -33,7 +33,7 @@
   border-color: #61c6eb;
 }
 .mblRadioButtonChecked.mblRadioButtonSelected, .mblRadioButton:checked.mblRadioButtonSelected {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#306ea1), to(#266093), color-stop(0.06, #4090d3), color-stop(0.5, #306ea1));
+  background-image: none;
 }
 .mblRadioButtonChecked.mblRadioButtonSelected::after, .mblRadioButton:checked.mblRadioButtonSelected::after {
   border-color: #61c6eb;

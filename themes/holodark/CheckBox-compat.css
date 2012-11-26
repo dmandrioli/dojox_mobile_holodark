@@ -17,7 +17,7 @@
   -moz-appearance: none;
 }
 .dj_gecko .mblCheckBoxSelected {
-  background-image: -moz-linear-gradient(top, #306ea1 0%, #4090d3 6%, #306ea1 50%, #266093 100%);
+  background-image: none;
 }
 .dj_gecko .mblCheckBoxChecked, .dj_gecko .mblCheckBox:checked {
   background-image: -moz-linear-gradient(top, #00a200 0%, #00ba00 20%, #00ba00 20%, #00d300 100%);
@@ -27,7 +27,7 @@
   -moz-transform-origin: 50% 50%;
 }
 .dj_gecko .mblCheckBoxChecked.mblCheckBoxSelected, .dj_gecko .mblCheckBox:checked.mblCheckBoxSelected {
-  background-image: -moz-linear-gradient(top, #306ea1 0%, #4090d3 6%, #306ea1 50%, #266093 100%);
+  background-image: none;
 }
 .dj_ff3 .mblCheckBox {
   -moz-border-radius: 2px;
