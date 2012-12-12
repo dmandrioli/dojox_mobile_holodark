@@ -18,8 +18,10 @@
 }
 /* barType="tabBar" */
 .mblTabBarTabBar {
+  background-color: rgba(0, 0, 0, 0);
   background-image: none;
-  background-color: #333333;
+  border-style: none;
+  line-height: 0.5em;
 }
 .dj_ff3 .mblTabBarTabBar .mblTabBarButtonSelected {
   -moz-border-radius: 3px;
@@ -69,4 +71,12 @@
 }
 .mblTabBarTallTab .mblTabBarButtonSelected {
   background-color: #8c8e8c;
+}
+.mblTabBarSegmentedControl,
+.mblTabBarStandardTab {
+  background-image: none;
+}
+.mblTabBarSegmentedControl .mblTabBarButton,
+.mblTabBarStandardTab .mblTabBarButton {
+  background-image: none;
 }

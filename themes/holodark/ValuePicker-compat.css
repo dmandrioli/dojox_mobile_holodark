@@ -30,3 +30,6 @@
 .dj_gecko .mblValuePickerSlotInputArea {
   background-image: none;
 }
+.mblValuePickerSlotInputArea {
+  background-color: transparent;
+}

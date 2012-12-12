@@ -86,8 +86,8 @@
 @default-selected-background-image-gecko: none;
 
 @heading-background-color: #8c8a8c;
-.heading-background-image () { .background-image-linear-gradient-top-bottom(#9c9e9c, #848284); }
-@heading-background-image-gecko: -moz-linear-gradient(top, #9c9e9c 0%, #848284 100%);
+.heading-background-image () { background-image: none; }
+@heading-background-image-gecko: none;
 @heading-border-top-color: #cdd5df;
 @heading-border-bottom-color: #2d3642;
 
@@ -211,6 +211,7 @@
 .mblToolBarButtonBodyInHeading-styles () {
 }
 .mblToolBarButtonBodyInHeading-compat-gecko () {
+
 }
 
 // RoundRect.less & RoundRectList.less
@@ -429,7 +430,11 @@
 	
 }
 .mblTabBarTabBar-compat () {
-	background-color: @holo-grey2;
+  .holoTabBarBackground-styles;
+  line-height: 0.5em;
+
+
+	//background-color: @holo-grey2;
 }
 .mblTabBarTabBarButton-styles () {
 	border-radius: 0px;
@@ -475,7 +480,9 @@
   border-bottom-style: solid;
 }
 .mblTabBarSegmentedControlButton-compat-gecko () {
+
 }
+
 .mblTabBarSegmentedControlButtonSelected-styles () {
   border-radius: 0px;
   height:23px;
