@@ -1,5 +1,17 @@
 @import "../common/domButtons/DomButtonWhiteCross.css";
 /* View background */
+/*
+@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
+
+@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
+
+
+.holoViewBottomGradient-styles () {
+	background-color: @holo-base-color;
+	background-image: @holo-view-bottom-gradient-image;
+	
+}
+*/
 /* dojox.mobile.TabBar */
 .mblTabBar {
   position: relative;
@@ -65,7 +77,7 @@
   font-size: 11px;
   display: inline;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
 }
 .mblTabBarTabBar .mblTabBarButtonSelected {
@@ -79,6 +91,7 @@
 /* barType="segmentedControl" */
 .mblTabBarSegmentedControl {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9c9e9c), to(#848284));
+  background-image: linear-gradient(to bottom, #9c9e9c 0%, #848284 100%);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   border-style: none;
@@ -137,6 +150,7 @@
 /* barType="standardTab" */
 .mblTabBarStandardTab {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9c9e9c), to(#848284));
+  background-image: linear-gradient(to bottom, #9c9e9c 0%, #848284 100%);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   border-style: none;
@@ -150,7 +164,7 @@
   font-family: Helvetica;
   font-size: 14px;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
   background-color: #333333;
   /* TODO: to compat */
 
@@ -164,11 +178,11 @@
 .mblTabBarStandardTab .mblTabBarButtonLabel {
   display: inline;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
 }
 .mblTabBarStandardTab .mblTabBarButtonSelected {
-  color: white;
+  color: #ffffff;
   background-color: #33b5e5;
   /* TODO: to compat */
 
@@ -184,11 +198,13 @@
   border: 1px solid #2d3642;
   background-color: #000000;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d2d2d), to(#000000), color-stop(0.5, #141414), color-stop(0.5, #000000));
+  background-image: linear-gradient(to bottom, #2d2d2d 0%, #141414 50%, #000000 50%, #000000 100%);
 }
 .mblTabBarSlimTab .mblTabBarButton {
   padding: 7px;
   border-right: 1px solid #4e4e4e;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d2d2d), to(#000000), color-stop(0.5, #141414), color-stop(0.5, #000000));
+  background-image: linear-gradient(to bottom, #2d2d2d 0%, #141414 50%, #000000 50%, #000000 100%);
   font-family: Helvetica;
   font-size: 14px;
   font-weight: bold;
@@ -207,6 +223,7 @@
 .mblTabBarSlimTab .mblTabBarButtonSelected {
   background-color: #404040;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#313031), to(#959595), color-stop(0.5, #5a555a), color-stop(0.5, #616161));
+  background-image: linear-gradient(to bottom, #313031 0%, #5a555a 50%, #616161 50%, #959595 100%);
 }
 .mblTabBarSlimTab .mblTabBarButtonHasIcon .mblTabBarButtonLabel {
   margin-left: 20px;
@@ -254,6 +271,7 @@
   border-style: solid;
   border-color: black #182018 black #393c39;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#100c10), color-stop(0.1, #313031));
+  background-image: linear-gradient(to bottom, #181818 0%, #313031 10%, #100c10 100%);
   font-family: Helvetica;
   font-size: 13px;
   color: white;
@@ -276,6 +294,7 @@
 }
 .mblTabBarTallTab .mblTabBarButtonSelected {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a59ea5), to(#848284));
+  background-image: linear-gradient(to bottom, #a59ea5 0%, #848284 100%);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   border-radius: 0px;
@@ -285,7 +304,7 @@
   border-bottom-width: 6px;
   border-bottom-style: solid;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .mblTabBarTabBar {
     /* Tab separator only for width < 500 (because TabBar._largeScreenWidth == 500)*/
   

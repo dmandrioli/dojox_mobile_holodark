@@ -1,26 +1,43 @@
 /* View background */
+/*
+@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
+
+@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
+
+
+.holoViewBottomGradient-styles () {
+	background-color: @holo-base-color;
+	background-image: @holo-view-bottom-gradient-image;
+	
+}
+*/
 /* dojox.mobile.RadioButton */
 .mblRadioButton {
   background-image: url(compat/button-bg.png);
 }
-.mblRadioButtonChecked, .mblRadioButton:checked {
+.mblRadioButtonChecked,
+.mblRadioButton:checked {
   background-image: url(compat/button-chk-bg.png);
 }
-.mblRadioButtonChecked.mblRadioButtonSelected, .mblRadioButton:checked.mblRadioButtonSelected {
+.mblRadioButtonChecked.mblRadioButtonSelected,
+.mblRadioButton:checked.mblRadioButtonSelected {
   background-image: url(compat/blue-button-sel-bg.png);
 }
 .dj_gecko .mblRadioButton {
   background-image: -moz-linear-gradient(top, #fdfdfd 0%, #f8f8f8 50%, #eeeeee 50%, #cecece 100%);
   -moz-appearance: none;
 }
-.dj_gecko .mblRadioButtonChecked, .dj_gecko .mblRadioButton:checked {
+.dj_gecko .mblRadioButtonChecked,
+.dj_gecko .mblRadioButton:checked {
   background-image: -moz-linear-gradient(top, #00a200 0%, #00ba00 20%, #00ba00 20%, #00d300 100%);
 }
-.dj_gecko .mblRadioButtonChecked::after, .dj_gecko .mblRadioButton:checked::after {
+.dj_gecko .mblRadioButtonChecked::after,
+.dj_gecko .mblRadioButton:checked::after {
   -moz-transform: rotate(45deg);
   -moz-transform-origin: 50% 50%;
 }
-.dj_gecko .mblRadioButtonChecked.mblRadioButtonSelected, .dj_gecko .mblRadioButton:checked.mblRadioButtonSelected {
+.dj_gecko .mblRadioButtonChecked.mblRadioButtonSelected,
+.dj_gecko .mblRadioButton:checked.mblRadioButtonSelected {
   background-image: none;
 }
 .dj_ff3 .mblRadioButton {

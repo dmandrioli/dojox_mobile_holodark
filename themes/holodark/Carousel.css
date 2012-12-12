@@ -1,4 +1,16 @@
 /* View background */
+/*
+@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
+
+@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
+
+
+.holoViewBottomGradient-styles () {
+	background-color: @holo-base-color;
+	background-image: @holo-view-bottom-gradient-image;
+	
+}
+*/
 /* dojox.mobile.Carousel */
 .mblCarousel {
   overflow: hidden;
@@ -67,6 +79,7 @@
 }
 .mblCarouselItemImage {
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   vertical-align: bottom;
 }
 .mblCarouselItemBlank {
@@ -75,4 +88,5 @@
 .mblCarouselSlotSelected .mblCarouselItemImage {
   opacity: 0.6;
   -webkit-box-shadow: none;
+  box-shadow: none;
 }

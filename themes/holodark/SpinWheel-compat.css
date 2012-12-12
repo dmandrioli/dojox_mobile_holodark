@@ -1,11 +1,24 @@
 /* View background */
+/*
+@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
+
+@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
+
+
+.holoViewBottomGradient-styles () {
+	background-color: @holo-base-color;
+	background-image: @holo-view-bottom-gradient-image;
+	
+}
+*/
 .mblSpinWheel {
   background-image: url(../common/compat/spinwheel-bg.png);
 }
 .mblSpinWheelBar {
   background-image: url(../common/compat/spinwheel-bar.png);
 }
-.mblSpinWheelSlotTouch, .mblSpinWheelSlotPanel {
+.mblSpinWheelSlotTouch,
+.mblSpinWheelSlotPanel {
   left: 0;
 }
 .dj_gecko .mblSpinWheel {
@@ -20,7 +33,8 @@
 .dj_ie .mblSpinWheelBar {
   filter: progid:DXImageTransform.Microsoft.alpha(opacity=60);
 }
-.dj_ie6 .mblSpinWheelBar, .dj_ie7 .mblSpinWheelBar {
+.dj_ie6 .mblSpinWheelBar,
+.dj_ie7 .mblSpinWheelBar {
   z-index: -1;
 }
 .dj_ie7 .mblSpinWheelSlotTouch {

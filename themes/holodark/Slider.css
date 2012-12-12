@@ -1,4 +1,16 @@
 /* View background */
+/*
+@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
+
+@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
+
+
+.holoViewBottomGradient-styles () {
+	background-color: @holo-base-color;
+	background-image: @holo-view-bottom-gradient-image;
+	
+}
+*/
 /* dojox.mobile.Slider */
 .mblSlider {
   margin: 15px;
@@ -6,8 +18,11 @@
   border-width: 1px;
   border-radius: 10em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bdbebd), to(#f7f3f7));
+  background-image: linear-gradient(to bottom, #bdbebd 0%, #f7f3f7 100%);
   -webkit-user-select: none;
+  -ms-user-select: none;
   -webkit-box-sizing: content-box;
+  box-sizing: content-box;
   border-color: #b0b0b0;
 }
 .mblSliderH {
@@ -42,10 +57,12 @@
   border-width: 1px;
   border-radius: 10em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9c9a9c), to(#848284));
+  background-image: linear-gradient(to bottom, #9c9a9c 0%, #848284 100%);
   border-color: transparent;
 }
 .mblSliderTransition {
   -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
 }
 .mblSliderTouchBox {
   margin: 0;

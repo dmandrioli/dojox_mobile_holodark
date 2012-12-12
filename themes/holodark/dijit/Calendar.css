@@ -1,4 +1,16 @@
 /* View background */
+/*
+@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
+
+@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
+
+
+.holoViewBottomGradient-styles () {
+	background-color: @holo-base-color;
+	background-image: @holo-view-bottom-gradient-image;
+	
+}
+*/
 /* if you link this style sheet, dijit/themes/dijit.css must be imported. */
 /* dijit.Calendar */
 .dijitCalendar {
@@ -30,6 +42,7 @@
   background-color: transparent;
   background-image: none;
   -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
 }
 .dijitArrowButtonInner {
   display: none;
@@ -80,7 +93,8 @@
   text-decoration: none;
   border: none;
 }
-.dijitCalendarPreviousMonth .dijitCalendarDateLabel, .dijitCalendarNextMonth .dijitCalendarDateLabel {
+.dijitCalendarPreviousMonth .dijitCalendarDateLabel,
+.dijitCalendarNextMonth .dijitCalendarDateLabel {
   color: lightGrey;
 }
 .dijitCalendarHoveredDate .dijitCalendarDateLabel {
@@ -88,6 +102,7 @@
 }
 .dijitCalendarSelectedDate .dijitCalendarDateLabel {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00a200), to(#00d300), color-stop(0.2, #00ba00), color-stop(0.2, #00ba00));
+  background-image: linear-gradient(to bottom, #00a200 0%, #00ba00 20%, #00ba00 20%, #00d300 100%);
   color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
 }
@@ -105,7 +120,8 @@
   color: white;
   font-size: 16px;
 }
-.dijitCalendarNextYear, .dijitCalendarPreviousYear {
+.dijitCalendarNextYear,
+.dijitCalendarPreviousYear {
   text-shadow: rgba(247, 247, 247, 0.6) 0px 1px 0px;
   padding: 1px 6px 3px 6px;
   color: white;

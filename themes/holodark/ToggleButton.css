@@ -1,4 +1,16 @@
 /* View background */
+/*
+@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
+
+@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
+
+
+.holoViewBottomGradient-styles () {
+	background-color: @holo-base-color;
+	background-image: @holo-view-bottom-gradient-image;
+	
+}
+*/
 /* dojox.mobile.ToggleButton */
 .mblToggleButton {
   position: relative;
@@ -7,6 +19,7 @@
   border-width: 1px 1px 1px 1px;
   border-style: outset;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#cecece), color-stop(0.5, #f8f8f8), color-stop(0.5, #eeeeee));
+  background-image: linear-gradient(to bottom, #fdfdfd 0%, #f8f8f8 50%, #eeeeee 50%, #cecece 100%);
   font-family: Helvetica;
   line-height: 29px;
   cursor: pointer;
@@ -33,6 +46,7 @@
 }
 .mblToggleButtonChecked {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00a200), to(#00d300), color-stop(0.2, #00ba00), color-stop(0.2, #00ba00));
+  background-image: linear-gradient(to bottom, #00a200 0%, #00ba00 20%, #00ba00 20%, #00d300 100%);
   color: white;
 }
 .mblToggleButtonChecked:after {
@@ -45,7 +59,9 @@
   border-width: 2px;
   border-style: none solid solid none;
   -webkit-transform: rotate(45deg) skew(10deg);
+  transform: rotate(45deg) skew(10deg);
   -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   border-color: white;
 }
 .mblToggleButtonChecked.mblToggleButtonSelected {
