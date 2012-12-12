@@ -28,7 +28,7 @@
 }
 .mblCheckBoxChecked,
 .mblCheckBox:checked {
-  background-color: #33b5e5;
+  background-color: transparent;
 }
 .mblCheckBoxChecked::after,
 .mblCheckBox:checked::after {

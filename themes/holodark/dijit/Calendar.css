@@ -88,7 +88,7 @@
   color: grey;
 }
 .dijitCalendarSelectedDate .dijitCalendarDateLabel {
-  background-color: #33b5e5;
+  background-color: transparent;
   color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
 }

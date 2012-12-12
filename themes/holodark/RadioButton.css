@@ -24,7 +24,7 @@
 }
 .mblRadioButtonChecked,
 .mblRadioButton:checked {
-  background-color: #33b5e5;
+  background-color: transparent;
 }
 .mblRadioButtonChecked::after,
 .mblRadioButton:checked::after {
