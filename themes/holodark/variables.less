@@ -28,20 +28,8 @@
 @holo-switch-off-color: @holo-grey2;
 @holo-switch-knob-color: #606060;
 
-/* View background */
 @holo-view-bottom-gradient-color: #272C33;
-/*
-@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
 
-@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
-
-
-.holoViewBottomGradient-styles () {
-	background-color: @holo-base-color;
-	background-image: @holo-view-bottom-gradient-image;
-	
-}
-*/
 .holoTabBarBackground-styles () {
 	background-color: rgba(0,0,0,0);
 	background-image: none;
@@ -116,7 +104,7 @@
 
 
 // background styles of form controls
-.mbl-button-background-image () { .background-image-linear-gradient-top-bottom-2-stops(#fdfdfd, #cecece, 0.5, #f8f8f8, 0.5, #eeeeee); }
+.mbl-button-background-image () { .default-button-border-styles; }
 
 .mbl-button-selected-background-image () { .default-button-selected-background-image(); }
 .mbl-blue-button-background-image () { .default-blue-button-background-image(); }
@@ -124,7 +112,7 @@
 .mbl-red-button-background-image () { .background-image-linear-gradient-top-bottom-2-stops(#fa9d58, #ee4115, 0.5, #ff4d25, 0.5, #ed4d15);}
 
 .mbl-red-button-selected-background-image () { .default-button-selected-background-image(); }
-.mbl-button-checked-background-image () { .background-image-linear-gradient-top-bottom-2-stops(#00a200, #00d300, 0.2, #00ba00, 0.2, #00ba00); }
+.mbl-button-checked-background-image () { background-color: @holo-color1; }
 
 // background styles of form controls (for gecko)
 @mbl-button-background-image-gecko: -moz-linear-gradient(top, #fdfdfd 0%, #f8f8f8 50%, #eeeeee 50%, #cecece 100%);
@@ -205,7 +193,6 @@
   right: -1px;
 }
 .mblToolBarButtonBody-styles () {
-	//.default-button-border-styles;
 	border: 1px solid #555555;
 }
 .mblToolBarButtonBodyInHeading-styles () {
@@ -564,7 +551,6 @@
 // TextBox.less
 
 .mblTextBox-styles () {
-	//.default-button-border-styles;
 	background-color: transparent;
 	border-top-color: transparent;
 	border-left-color: transparent;
@@ -681,35 +667,31 @@
 
 // Accordion.less
 .mblAccordion-styles () {
-	border-color: #8c8f91;
+	border-style:none;
 }
 .mblAccordionTitle-styles () {
-	border-top: 1px solid #8c8f91;
-	background-image: mbl-button-background-image;
+	.mbl-button-background-image();
 }
 .mblAccordionTitle-compat () {
-  background-color: #f8f8f8;
 }
 
 .mblAccordionTitle-compat-gecko () {
-	background-image: @mbl-button-background-image-gecko;
+  .mbl-button-background-image();
 }
 .mblAccordionTitleSelected-styles () {
-	border-bottom: 1px solid #8c8f91;
-	background-image: mbl-button-checked-background-image;
-	color: white;
+	.mbl-button-checked-background-image();
 }
 .mblAccordionTitleSelected-compat () {
-	background-color: #00ba00;
+  .mbl-button-checked-background-image();
 }
 .mblAccordionTitleSelected-compat-gecko () {
-	background-image: @mbl-button-checked-background-image-gecko;
+	 .mbl-button-checked-background-image();
 }
 .mblAccordionTitleAnchor-styles () {
-	color: black;
+	color: @holo-color;
 }
 .mblAccordionTitleAnchorSelected-styles () {
-	color: white;
+	color: @holo-color;
 }
 
 // SimpleDialog.less

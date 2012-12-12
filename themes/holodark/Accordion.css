@@ -1,21 +1,8 @@
-/* View background */
-/*
-@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
-
-@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
-
-
-.holoViewBottomGradient-styles () {
-	background-color: @holo-base-color;
-	background-image: @holo-view-bottom-gradient-image;
-	
-}
-*/
 /* dojox.mobile.Accordion */
 .mblAccordion {
   border-style: outset;
   border-width: 1px;
-  border-color: #8c8f91;
+  border-style: none;
 }
 .mblAccordionRoundRect {
   margin: 7px 9px 16px 9px;
@@ -43,8 +30,13 @@
   line-height: 30px;
   vertical-align: middle;
   white-space: nowrap;
-  border-top: 1px solid #8c8f91;
-  background-image: mbl-button-background-image;
+  background-image: none;
+  background-color: #333333;
+  border-style: none;
+  border-top-style: solid;
+  border-top-color: rgba(85, 85, 85, 0.9);
+  border-top-width: 1px;
+  border-radius: 2px;
 }
 .mblAccordionTitle:first-child {
   border-top: none;
@@ -54,7 +46,7 @@
   height: 100%;
   text-decoration: none;
   white-space: nowrap;
-  color: black;
+  color: #ffffff;
 }
 .mblAccordionIconParent {
   float: left;
@@ -68,12 +60,10 @@
   display: none;
 }
 .mblAccordionTitleSelected {
-  border-bottom: 1px solid #8c8f91;
-  background-image: mbl-button-checked-background-image;
-  color: white;
+  background-color: #33b5e5;
 }
 .mblAccordionTitleSelected .mblAccordionTitleAnchor {
-  color: white;
+  color: #ffffff;
 }
 .mblAccordionTitleSelected .mblAccordionIconParent1 {
   display: none;

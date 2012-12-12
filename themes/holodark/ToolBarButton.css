@@ -1,16 +1,3 @@
-/* View background */
-/*
-@holo-view-bottom-gradient-image: -webkit-gradient(linear, left top, left bottom, from(@holo-base-color), to(@holo-view-bottom-gradient-color));
-
-@holo-view-bottom-gradient-image-gecko: -moz-linear-gradient(top, @holo-base-color 0%, @holo-view-bottom-gradient-color 100%);
-
-
-.holoViewBottomGradient-styles () {
-	background-color: @holo-base-color;
-	background-image: @holo-view-bottom-gradient-image;
-	
-}
-*/
 /* dojox.mobile.ToolBarButton */
 .mblToolBarButton {
   display: inline-block;
