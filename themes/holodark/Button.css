@@ -48,7 +48,6 @@
   cursor: default;
 }
 .mblBlueButton {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7a9de9), to(#2362dd), color-stop(0.5, #366edf), color-stop(0.5, #215fdc));
   color: #ffffff;
   background-image: none;
   background-color: #333333;

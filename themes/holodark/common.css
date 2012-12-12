@@ -29,11 +29,10 @@ html.mobile,
 .mblColorBlue {
   color: #ffffff;
   background-color: #366edf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7a9de9), to(#2362dd), color-stop(0.5, #366edf), color-stop(0.5, #215fdc));
+  background-image: none;
 }
 .mblColorBlue45 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7a9de9), to(#2362dd), color-stop(0.5, #366edf), color-stop(0.5, #215fdc));
-  background-image: linear-gradient(to bottom, #7a9de9 0%, #366edf 50%, #215fdc 50%, #2362dd 100%);
+  background-image: none;
 }
 /* Default Button Colors */
 .mblColorDefault {

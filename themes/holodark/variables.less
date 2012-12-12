@@ -51,10 +51,15 @@
 
 @default-blue-button-color: white;
 @default-blue-button-background-color: #366edf;
-@default-blue-button-background-image: -webkit-gradient(linear, left top, left bottom, from(#7a9de9), to(#2362dd), color-stop(0.5, #366edf), color-stop(0.5, #215fdc));
+.default-blue-button-background-image () { 
+  background-image: none;
+}
+
 @default-blue-button-background-image-gecko: -moz-linear-gradient(top, #7a9de9 0%, #366edf 50%, #215fdc 50%, #2362dd 100%);
 
-.mbl-color-blue-45 () { .background-image-linear-gradient-top-bottom-2-stops(#7a9de9, #2362dd, 0.5, #366edf, 0.5, #215fdc); }
+.mbl-color-blue-45 () { 
+  background-image: none;  
+}
 
 
 .mbl-color-default-45 () { background-color: @holo-grey2; }
@@ -66,7 +71,7 @@
 
 @default-button-color: @holo-color;
 @default-button-background-color: @holo-grey2;
-@default-button-background-image: none;
+.default-button-background-image() {background-image: none};
 @default-button-background-image-gecko: none;
 @default-button-border-radius: 2px;
 
@@ -114,7 +119,7 @@
 .mbl-button-background-image () { .background-image-linear-gradient-top-bottom-2-stops(#fdfdfd, #cecece, 0.5, #f8f8f8, 0.5, #eeeeee); }
 
 .mbl-button-selected-background-image () { .default-button-selected-background-image(); }
-.mbl-blue-button-background-image () { background-image: @default-blue-button-background-image; }
+.mbl-blue-button-background-image () { .default-blue-button-background-image(); }
 .mbl-blue-button-selected-background-image () { .default-button-selected-background-image(); }
 .mbl-red-button-background-image () { .background-image-linear-gradient-top-bottom-2-stops(#fa9d58, #ee4115, 0.5, #ff4d25, 0.5, #ed4d15);}
 
@@ -147,12 +152,12 @@
 .mblColorBlue-styles () {
 	color: @default-blue-button-color;
 	background-color: @default-blue-button-background-color;
-	background-image: @default-blue-button-background-image;
+	.default-blue-button-background-image();
 }
 .mblColorDefault-styles () {
 	color: @holo-color;
 	background-color: @default-button-background-color;
-	background-image: @default-button-background-image;
+	.default-button-background-image();
 }
 .mblColorDefaultSel-styles () {
 	color: @default-button-selected-color;
@@ -486,7 +491,7 @@
 .mblTabBarStandardTabButton-styles () {
 	color: @default-button-color;
 	background-color: @default-button-background-color; /* TODO: to compat */
-	background-image: @default-button-background-image;
+	.default-button-background-image();
 }
 .mblTabBarStandardTabButtonIconArea-styles () {
 }
@@ -499,7 +504,8 @@
 .mblTabBarStandardTabButtonSelected-styles () {
 	color: @default-button-selected-color;
 	background-color: @default-button-selected-background-color; /* TODO: to compat */
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#313031), to(#959595), color-stop(0.5, #5a555a), color-stop(0.5, #616161));
+	.background-image-linear-gradient-top-bottom-2-stops(#313031, #959595, 0.5, #5a555a, 0.5, #616161)
+	
 }
 .mblTabBarStandardTabButtonLabelSelected-styles () {
 }
