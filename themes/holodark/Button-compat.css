@@ -39,3 +39,21 @@
 .dj_ff3 .mblButton {
   -moz-border-radius: 2px;
 }
+.mblButton {
+  background-image: none;
+}
+.mblButtonSelected {
+  background-image: none;
+}
+.mblBlueButton {
+  background-image: none;
+}
+.mblBlueButtonSelected {
+  background-image: none;
+}
+.mblRedButton {
+  background-image: none;
+}
+.mblRedButtonSelected {
+  background-image: none;
+}
