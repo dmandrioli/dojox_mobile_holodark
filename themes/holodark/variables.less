@@ -7,17 +7,7 @@
 @holo-grey3: #4F4F4F;
 
 @holo-color1: #33B5E5;
-/* Only the first color of Holo theme is used
-@holo-color1d: #0099CC;
-@holo-color2: #AA66CC;
-@holo-color2d: #9933CC;
-@holo-color3: #99CC00;
-@holo-color3d: #669900;
-@holo-color4: #FFBB33;
-@holo-color4d: #FF8800;
-@holo-color5: #FF4444;
-@holo-color5d: #CC0000;
-*/
+
 @holo-checkbox-border-color: #5C5C5C;
 @holo-checkbox-selected-color: #99BBCA;
 @holo-checkbox-tick-color: #61C6EB;
@@ -28,8 +18,12 @@
 @holo-switch-knob-color: #606060;
 
 @holo-slider-thumb-color: rgba(31, 83, 102, 0.8);
-@holo-slider-background-image: -webkit-gradient(radial, 9 9, 3, 9 9, 9, from(@holo-color1), color-stop(0, @holo-color1), color-stop(0.01, @holo-slider-thumb-color), to(@holo-slider-thumb-color));
-@holo-slider-background-image-gecko: -moz-linear-gradient(top, #bdbebd 0%, #f7f3f7 100%);// TBD
+
+.holo-slider-background-image () {
+  background: -webkit-gradient(radial, 9 9, 3, 9 9, 9, from(@holo-color1), color-stop(0, @holo-color1), color-stop(0.01, @holo-slider-thumb-color), to(@holo-slider-thumb-color));
+  background-image: radial-gradient(circle closest-side at center, #FFFFFF 0%, #A435C5 50%, #251AE7 75%, #00A3EF 100%);
+}
+@holo-slider-background-image-gecko: -moz-linear-gradient(top, @holo-color1 0%, @holo-slider-thumb-color 100%);
 @holo-slider-track-color: #292929;
 
 @default-blue-button-color: white;
@@ -773,13 +767,14 @@
 	background-color: white;
 }
 .dijitCalendar-thead-styles () {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#84868c), to(#000000), color-stop(0.5, #52555a), color-stop(0.5, #292929));
+	background-color: @holo-grey2;
+	
 }
 .dijitCalendar-thead-compat () {
-	background-image: url(compat/calendar-month-bg.png);
+	background-color: @holo-grey2;
 }
 .dijitCalendar-thead-compat-gecko () {
-	background-image: -moz-linear-gradient(top, #84868c 0%, #52555a 50%, #292929 50%, #000000 100%);
+	background-color: @holo-grey2;
 }
 .dijitCalendarMonthLabel-styles () {
 	color: white;
@@ -818,37 +813,36 @@
 	color: lightGrey;
 }
 .dijitCalendarDateLabel-Hovered-styles () {
-	color: grey;
+	color: @holo-color1;
 }
 .dijitCalendarDateLabel-Selected-styles () {
-	.mbl-button-checked-background-image();
-	color: white;
-	text-shadow: rgba(0,0,0,0.4) 0 1px 0;
+	color: @holo-color1;
+	
 }
 .dijitCalendarDateLabel-Selected-compat () {
-	background-image: url(compat/calendar-datelabel-sel-bg.png);
+	color: @holo-color1;
 }
 .dijitCalendarDateLabel-Selected-compat-gecko () {
-	background-image: @mbl-button-checked-background-image-gecko;
+	color: @holo-color1;
 }
 .dijitCalendarDateLabel-Active-styles () {
-	background-image: @default-selected-background-image;
+	
 }
 .dijitCalendarDateLabel-Active-compat () {
-	background-image: url(compat/calendar-datelabel-act-bg.png);
+	
 }
 .dijitCalendarDateLabel-Active-compat-gecko () {
-	background-image: @default-selected-background-image-gecko;
+	
 }
 .dijitCalendarYearLabel-styles () {
 	padding: 0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#84868c), to(#000000), color-stop(0.5, #52555a), color-stop(0.5, #292929));
+	background-color: @holo-grey2;
 }
 .dijitCalendarYearLabel-compat () {
-	background-image: url(compat/calendar-year-bg.png);
+  background-color: @holo-grey2;
 }
 .dijitCalendarYearLabel-compat-gecko () {
-	background-image: -moz-linear-gradient(top, #84868c 0%, #52555a 50%, #292929 50%, #000000 100%);
+  background-color: @holo-grey2;
 }
 .dijitCalendarSelectedYear-styles () {
 	color: white;

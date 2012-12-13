@@ -1,14 +1,3 @@
-/* Only the first color of Holo theme is used
-@holo-color1d: #0099CC;
-@holo-color2: #AA66CC;
-@holo-color2d: #9933CC;
-@holo-color3: #99CC00;
-@holo-color3d: #669900;
-@holo-color4: #FFBB33;
-@holo-color4d: #FF8800;
-@holo-color5: #FF4444;
-@holo-color5d: #CC0000;
-*/
 .dj_gecko .mblColorBlue {
   background-image: -moz-linear-gradient(top, #7a9de9 0%, #366edf 50%, #215fdc 50%, #2362dd 100%);
 }
