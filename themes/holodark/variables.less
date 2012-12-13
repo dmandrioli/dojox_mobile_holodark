@@ -1,14 +1,13 @@
-
 @import "../common/css3.less";
 
 @holo-color: white;
 @holo-base-color: black;
 @holo-grey1: #222222;
 @holo-grey2: #333333;
-@holo-grey3: #919191;
-@holo-grey4: #4F4F4F;
+@holo-grey3: #4F4F4F;
 
 @holo-color1: #33B5E5;
+/* Only the first color of Holo theme is used
 @holo-color1d: #0099CC;
 @holo-color2: #AA66CC;
 @holo-color2d: #9933CC;
@@ -18,7 +17,7 @@
 @holo-color4d: #FF8800;
 @holo-color5: #FF4444;
 @holo-color5d: #CC0000;
-
+*/
 @holo-checkbox-border-color: #5C5C5C;
 @holo-checkbox-selected-color: #99BBCA;
 @holo-checkbox-tick-color: #61C6EB;
@@ -28,14 +27,10 @@
 @holo-switch-off-color: @holo-grey2;
 @holo-switch-knob-color: #606060;
 
-@holo-view-bottom-gradient-color: #272C33;
-
-.holoTabBarBackground-styles () {
-	background-color: rgba(0,0,0,0);
-	background-image: none;
-	border-style:none;
-}
-
+@holo-slider-thumb-color: rgba(31, 83, 102, 0.8);
+@holo-slider-background-image: -webkit-gradient(radial, 9 9, 3, 9 9, 9, from(@holo-color1), color-stop(0, @holo-color1), color-stop(0.01, @holo-slider-thumb-color), to(@holo-slider-thumb-color));
+@holo-slider-background-image-gecko: -moz-linear-gradient(top, #bdbebd 0%, #f7f3f7 100%);// TBD
+@holo-slider-track-color: #292929;
 
 @default-blue-button-color: white;
 @default-blue-button-background-color: #366edf;
@@ -155,6 +150,7 @@
 
 // Heading.less
 .mblHeading-styles () {
+	color: @holo-color;
 	background-color: @holo-base-color;
 	border-bottom-color: @holo-color1;
 	border-bottom-width: 2px;
@@ -249,7 +245,7 @@
   margin-left:7px;
 	
 	font-size: 18px;
-	color: white;
+	color: @holo-color;
 }
 .mblListItemSelected-styles () {
 	color: @default-selected-color;
@@ -349,7 +345,7 @@
 }
 
 .mblComboBoxMenuItem-styles () {
-	border-color: @holo-grey4;
+	border-color: @holo-grey3;
 	border-top: none;
 	height: 35px;
 	padding-top: 17px;
@@ -391,11 +387,6 @@
 @mbl-slider-bar-border-radius: 10em;
 @mbl-slider-knob-border-radius: 10em;
 
-@holo-slider-thumb-color: rgba(31, 83, 102, 0.8);
-@holo-slider-background-image: -webkit-gradient(radial, 9 9, 3, 9 9, 9, from(@holo-color1), color-stop(0, @holo-color1), color-stop(0.01, @holo-slider-thumb-color), to(@holo-slider-thumb-color));
-@holo-slider-background-image-gecko: -moz-linear-gradient(top, #bdbebd 0%, #f7f3f7 100%);// TBD
-@holo-slider-track-color: #292929;
-
 //
 .mblSlider-styles () {
 	border-color: #b0b0b0;
@@ -405,8 +396,17 @@
 }
 
 // TabBar.less
+
+.holoTabBarBackground-styles () {
+  background-color: rgba(0,0,0,0);
+  background-image: none;
+  border-style:none;
+}
+
+
 .mblTabBar-styles () {
 	text-shadow: none;
+	color: @holo-color;
 }
 
 
@@ -419,10 +419,8 @@
 .mblTabBarTabBar-compat () {
   .holoTabBarBackground-styles;
   line-height: 0.5em;
-
-
-	//background-color: @holo-grey2;
 }
+
 .mblTabBarTabBarButton-styles () {
 	border-radius: 0px;
 	height:47px;
