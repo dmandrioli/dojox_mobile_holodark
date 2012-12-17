@@ -57,9 +57,6 @@
   background-color: transparent;
   background-image: none;
 }
-.mblCheckBox {
-  background-image: none;
-}
 .mblCheckBox:disabled {
   border-color: #333333;
 }

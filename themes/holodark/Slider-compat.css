@@ -19,15 +19,15 @@
   background-image: none;
 }
 .dj_gecko .mblSlider {
-  background-image: -moz-linear-gradient(top, #bdbebd 0%, #f7f3f7 100%);
+  background-image: -none;
   -moz-user-select: none;
   -moz-box-sizing: content-box;
 }
 .dj_gecko .mblSliderProgressBar {
-  background-image: -moz-linear-gradient(top, #00a200 0%, #00ba00 20%, #00ba00 20%, #00d300 100%);
+  background-image: none;
 }
 .dj_gecko .mblSliderHandle {
-  background-image: -moz-linear-gradient(top, #9c9a9c 0%, #848284 100%);
+  background-image: none;
 }
 .dj_ff3 .mblSlider {
   -moz-border-radius: 10em;

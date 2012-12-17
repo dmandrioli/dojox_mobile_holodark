@@ -32,7 +32,7 @@
   background-image: none;
 }
 
-@default-blue-button-background-image-gecko: -moz-linear-gradient(top, #7a9de9 0%, #366edf 50%, #215fdc 50%, #2362dd 100%);
+@default-blue-button-background-image-gecko: none;
 
 .mbl-color-blue-45 () { 
   background-image: none;  
@@ -42,9 +42,9 @@
 .mbl-color-default-45 () { background-color: @holo-grey2; }
 .mbl-color-default-sel-45 () {background-color: @holo-color1; }
 
-@mbl-color-blue-45-gecko: -moz-linear-gradient(top left, #7a9de9 0%, #366edf 50%, #215fdc 50%, #2362dd 100%);
-@mbl-color-default-45-gecko: -moz-linear-gradient(top left, #dfdfdf 0%, #a6a6a6 100%);
-@mbl-color-default-sel-45-gecko: -moz-linear-gradient(top left, #306ea1 0%, #4090d3 6%, #306ea1 50%, #266093 100%);
+@mbl-color-blue-45-gecko: none;
+@mbl-color-default-45-gecko: @holo-grey2;
+@mbl-color-default-sel-45-gecko: @holo-color1;
 
 @default-button-color: @holo-color;
 @default-button-background-color: @holo-grey2;
@@ -104,15 +104,13 @@
 .mbl-button-checked-background-image () { background-color: transparent; }
 
 // background styles of form controls (for gecko)
-@mbl-button-background-image-gecko: -moz-linear-gradient(top, #fdfdfd 0%, #f8f8f8 50%, #eeeeee 50%, #cecece 100%);
+@mbl-button-background-image-gecko: none;
 @mbl-button-selected-background-image-gecko: @default-button-selected-background-image-gecko;
 @mbl-blue-button-background-image-gecko: @default-blue-button-background-image-gecko;
 @mbl-blue-button-selected-background-image-gecko: @default-button-selected-background-image-gecko;
-@mbl-red-button-background-image-gecko: -moz-linear-gradient(top, #fa9d58 0%, #ff4d25 50%, #ed4d15 50%, #ee4115 100%);
-@mbl-red-button-selected-background-image-gecko: @default-button-selected-background-image-gecko;
-@mbl-button-checked-background-image-gecko: -moz-linear-gradient(top, #00a200 0%, #00ba00 20%, #00ba00 20%, #00d300 100%);
-
-
+@mbl-red-button-background-image-gecko: none;
+@mbl-red-button-selected-background-image-gecko: none;
+@mbl-button-checked-background-image-gecko: none;
 
 // common.less
 .mobile-body-styles () {
@@ -267,9 +265,9 @@
 .mbl-switch-knob-background-image () {  .background-image-linear-gradient-top-bottom(#9c9a9c, #848284); }
 
 //
-@mbl-switch-bg-left-background-image-gecko: -moz-linear-gradient(top, #00a200 0%, #00ba00 20%, #00ba00 20%, #00d300 100%);
-@mbl-switch-bg-right-background-image-gecko: -moz-linear-gradient(top, #bdbebd 0%, #f7f3f7 100%);
-@mbl-switch-knob-background-image-gecko: -moz-linear-gradient(top, #9c9a9c 0%, #848284 100%);
+@mbl-switch-bg-left-background-image-gecko: none;
+@mbl-switch-bg-right-background-image-gecko: -none;
+@mbl-switch-knob-background-image-gecko: none;
 @mbl-switch-square-border-radius: 0px;
 //
 .mblSwitchBg-styles () {

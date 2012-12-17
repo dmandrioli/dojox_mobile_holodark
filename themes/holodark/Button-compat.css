@@ -19,19 +19,19 @@
   background-image: url(compat/red-button-sel-bg.png);
 }
 .dj_gecko .mblButton {
-  background-image: -moz-linear-gradient(top, #fdfdfd 0%, #f8f8f8 50%, #eeeeee 50%, #cecece 100%);
+  background-image: none;
 }
 .dj_gecko .mblButtonSelected {
   background-image: none;
 }
 .dj_gecko .mblBlueButton {
-  background-image: -moz-linear-gradient(top, #7a9de9 0%, #366edf 50%, #215fdc 50%, #2362dd 100%);
+  background-image: none;
 }
 .dj_gecko .mblBlueButtonSelected {
   background-image: none;
 }
 .dj_gecko .mblRedButton {
-  background-image: -moz-linear-gradient(top, #fa9d58 0%, #ff4d25 50%, #ed4d15 50%, #ee4115 100%);
+  background-image: none;
 }
 .dj_gecko .mblRedButtonSelected {
   background-image: none;
